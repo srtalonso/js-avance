@@ -1,6 +1,5 @@
 //Selecina todos los elemntos dcon la clese thumb
 const thumbs =document.querySelectorAll('.thumb');
-
 //Se realiza un recorrido de los elementyos de los elementos selecionados nos ayudara a encontrarlo
 thumbs.forEach(img =>{
     //Se agrega un evento cuano el raton pasa por encima de la imgen 
