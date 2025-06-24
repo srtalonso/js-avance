@@ -8,6 +8,13 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- ## Ejercicio 3: Formulario de suscripción con checkbox obligatorio
+    **Enunciado:**
+    Formulario con email y un checkbox 
+    “Acepto términos y condiciones”. 
+    El checkbox **debe** marcarse para permitir el envío.
+    Si el usuario intenta enviar sin marcar, muestra un error-->
+    
     <header></header>
     <nav></nav>
     <main>
@@ -16,16 +23,16 @@
                 Email:
                 <input type="email" id="sEmail" required>
                 <small class="error" id="errSEmail">
-            </label>
+            </label><br>
 
             <label>
-                <input type="checkbox" id="agree"> acepto condiciones
+                <input type="checkbox" id="agree"> Acepto condiciones
             </label>
 
-            <small class="erro" id="errAgree"></small> <br>
-            <button type="submit">Subscribirse</button>
+            <small class="error" id="errAgree"></small> <br>
+            <button type="submit"> Subscribirse </button>
         </form>
-        <!--Mensaje al registrar-->
+        <!--Mensaje al registrar ejecutado con JS-->
         <div id="subResult"></div>
     </main>
 

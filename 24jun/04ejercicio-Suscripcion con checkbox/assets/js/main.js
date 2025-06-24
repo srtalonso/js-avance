@@ -1,7 +1,7 @@
 //declarar variables
-//relacionamos campos del form al JS
+//relacionamos los 'id' del form a los campos del JS
 
-const subForm = document.querySelector('#sForm');
+const subForm = document.querySelector('#subForm');
 const sEmail = document.querySelector('#sEmail');
 const agree = document.querySelector('#agree');
 

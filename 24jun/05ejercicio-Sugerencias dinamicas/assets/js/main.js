@@ -24,18 +24,19 @@ search.addEventListener('input', () =>{
     if(!term) return;
 
     //4. Filtramos lasciudades que emiezen por el termino introducido 
-    cities.filter(ci =>
+    cities
+        .filter(ci =>
         //Convertimos cada ciudad a minusculas y comprobamos el 
         //.startWhith
         ci.toLowerCase().startsWith(term)
     )
     //5.Nos quedamos solo con las 5 coincidencias primeras
-    .slice(0.5)
+    .slice(0, 5)
 
     //6.Por cada ciudad coincidente
     .forEach(ci => {
         //6.1 Creamos un nuevo 'li'
-        const li = document('li');
+        const li = document.createElement('li');
         //6.2 Le asignamos el texto de la ciudad
         li.textContent = ci;
         //6.3 Y lo añadimosal 'ul' de las sugerencias
@@ -43,9 +44,9 @@ search.addEventListener('input', () =>{
     });
 });
 
-//SELLECION DE UNA SUGRENCIA
+//SELECCION DE UNA SUGRENCIA
 
-//Usamos el mousedown en lugar que click para capturar la selección
+//Usamos el 'mousedown' en lugar que click para capturar la selección
 //antes del input pierda el foco
     sugg. addEventListener('mousedown', e => {
     // 1. Comprovamos que el elem ento sobre el que se hace el mousedown es un <li>
