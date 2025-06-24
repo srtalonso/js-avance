@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/styles/style.css">
+   <script src="assets/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ## Ejercicio 5: Formulario con subida de imagen y previsualización
+        **Enunciado:**
+
+        Formulario con `<input type="file" id="imgInput" accept="image/*">` y un `<img id="preview">`. 
+        Al seleccionar un archivo de imagen, muestra su previsualización en el `<img>` 
+        sin enviarlo al servidor.-->
+
+    <header></header>
+    <nav></nav>
+    <main>
+        <form>
+            <!--accept = image/* sugerir solo imagenes -->
+            <input type="file" id="imgInput" accept="image/*">
+        </form>
+
+        <img id="preview"
+                alt="Previsualización"
+                style="max-width: 200px; display: none;">
+        <span id="errorMsg" style="color: red; display: none; margin-top: 0.5em; display: block;">
+    </span>
+
+    </main>
+        
+
+    <footer></footer>
+
+</body>
+</html>

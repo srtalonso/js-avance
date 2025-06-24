@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/styles/style.css">
+   <script src="assets/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+<!--Formulario de contacto con validación en tiempo real
+     **Enunciado:**
+     Crea un formulario de contacto con: nombre, email y mensaje (`<textarea>`). Implementa validación en tiempo real (`input` o `blur`):
+            - Nombre obligatorio.
+            - Email con formato correcto.
+            - Mensaje mínimo 20 caracteres.
+
+            Muestra feedback junto a cada campo (clases `.valid` / `.invalid`).-->
+
+        <form id="contactForm">
+            <label>
+               Nombre:
+                <input type="text" id="cName" required>
+                <small class="error" id="eName"></small>              <!-- Small lo utilizamos para describir el tipo de error-->
+            </label> <br>
+
+            <label>
+                Email:
+                <input type="email" id="cEmail" placeholder="Ingresa tu correo electónico" required>
+                <small class="error" id="eEmail"></small>              <!-- Small lo utilizamos para describir el tipo de error-->
+            </label> <br>
+
+            <label>
+                Mensaje:
+                <textarea id="cMsg" required></textarea>
+                <small class="error" id="eMsg"></small>              <!-- Small lo utilizamos para describir el tipo de error-->
+            </label> <br>
+
+            <button type="submit">Me quiero registrar</button>
+          
+        </form>
+        
+        <div id="result"></div>
+</main>
+    <footer></footer>
+
+</body>
+</html>

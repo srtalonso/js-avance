@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/styles/style.css">
+   <script src="assets/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <!-- Crear form con un confirmacion al entar si cumple los requisistos y 
+         con un contador de cuenta atras. Si al terminar el contador no se han ingresado, 
+         solicita reiniciar la web--> 
+
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Ingresa tu correo electónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+
+            <div>
+                Tiempo restante <span id="timerDisplay">30</span> seg
+            </div>
+          </form>
+          <!-- Ponemos fuera el 'div' para que nos muestre el mensaje-->
+          <div id="loginMsg"></div>
+            
+    </main>
+    <footer></footer>
+
+</body>
+</html>

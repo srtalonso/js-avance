@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{ 
+    min-height: 100vh;          /*total del alto del dispositivo, que vea toda la pantalla de la web*/
+    display: grid;
+    background-color: rgba(137, 43, 226, 0.721);
+    grid-template-columns: 25% 1fr;
+    grid-template-rows:50px 1fr 40px; 
+    grid-template-areas: 
+    "zh zh"
+    "zn zm"
+    "zf zf";          
+}
+
+header{
+    grid-area: zh;
+    background-color: rgba(194, 71, 71, 0.56);
+    color: aqua;
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+nav{
+    grid-area: znav;
+    background-color: hsla(82, 48%, 32%, 0.726);
+    color: rgba(161, 65, 65, 0.3);
+    padding: 1rem;
+
+}
+
+main{
+    grid-area: zm;
+    background-color: rgba(196, 37, 69, 0.791);
+    color: black;
+    padding: 1rem;
+}
+
+footer{
+    grid-area: zf;
+    background-color:rgba(153, 205, 50, 0.395);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Mi web tendrá este aspecrto hasat 768px que es el mayor porcentaje de dispositivos portatile en vertical
+- TABLET VERTICAL */
+@media (max-width: 768px){
+    /*Mi  plantilla se convertira en una columna*/
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 40px 1fr 30px;
+        grid-template-areas:
+        "zh" "zn" "zm" "zf";
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    
+}
+
+/*Pantallas de <= 500px*/
+@media (max-width: 999px){
+    html{
+        font-size: 40%;
+    }
+
+    #hero .container{
+        flex-direction: column;
+    }
+
+    .hero_image{
+        display: grid;
+        place-items: center;
+    }
+
+    #contact .container{
+        height: 70vh ;
+    }
+
+    .card img{
+        height: 300px;
+    }
+}
+
+/*Ajuste pantallas mayores a 1000px*/
+@media (max-width: 1000px){
+    .top_contact{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+    }
+    .bottom_contact{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+    }
+}
+
+/*Que el input sea bloque y deje un hueco bajo el*/
+#search {
+    display: block;
+    margin-bottom: 4px;
+}
+
+#suggestions{
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+/*Al hace foco en input, mostrar la lista que le sigue*/
+#search:focus + #suggestions{
+    display: block;
+}
+
+#suggestions li{
+    padding: 4px;
+    cursor: pointer;
+}
+ suggestions li:hover{
+    background-color: #eee;
+ }

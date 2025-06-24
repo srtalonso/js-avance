@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/styles/style.css">
+   <script src="assets/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+
+         <!--Enunciado:
+            Crea un formulario de registro con campos:
+            - Nombre de usuario (`<input type="text">`), obligatorio, mínimo 3 caracteres.
+            - Email (`<input type="email">`), obligatorio.
+            - Contraseña (`<input type="password">`), obligatorio, mínimo 8 caracteres.
+            - Confirmar contraseña (`<input type="password">`), obligatorio, debe coincidir con la contraseña.--> 
+
+        <form id="regForm">
+            <label>
+                Usuario:
+                <input type="text" id="user">
+                <small class="error" id="errUser"></small>              <!-- Small lo utilizamos para describir el tipo de error-->
+            </label> <br>
+
+            <label>
+                Email:
+                <input type="email" id="email" placeholder="Ingresa tu correo electónico" required>
+                <small class="error" id="errEmail"></small>              <!-- Small lo utilizamos para describir el tipo de error-->
+            </label> <br>
+
+            <label>
+                Contraseña:
+                <input type="password" id="pwd" placeholder="Contraseña" required>
+                <small class="error" id="errPwd"></small>              <!-- Small lo utilizamos para describir el tipo de error-->
+            </label> <br>
+
+            <label>
+                Confirmar contraseña:
+                <input type="password" id="pwd2" placeholder="Confirmar contraseña" required>
+                <small class="error" id="errPwd2"></small>              <!-- Small lo utilizamos para describir el tipo de error-->
+            </label> <br>
+
+            <button type="submit">Me quiero registrar</button>
+          
+        </form>
+        
+        <div id="result"></div>
+          
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
