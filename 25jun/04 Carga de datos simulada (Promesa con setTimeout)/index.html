@@ -8,9 +8,29 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Ejercicio 4: Carga de datos simulada (Promesa con setTimeout)  
+        Objetivo:
+            Simular la carga de datos como si vinieran de un servidor, mostrando un mensaje de éxito o error.
+
+        Instrucciones:
+            1. Crea una función `simularCarga` que devuelva una `Promise`.
+            2. Dentro de la promesa, usa `setTimeout` para esperar 1.5 segundos.
+            3. Simula un 70% de éxito (`resolve`) y 30% de fallo (`reject`).
+            4. Al hacer clic en un botón "Cargar datos", muestra "Cargando…", luego el resultado (usuario y edad) o el error.
+
+        Lo que practicarás:
+            Creación y uso de promesas, y manejo de éxito/error con `.then()` y `.catch()`.-->
+
     <header></header>
     <nav></nav>
+
     <main>
+        <button id="btnCargar">Cargar datos</button>
+            <!-- <pre> en HTML significa "preformateado"
+            Se usa para mostrar texto exactamente como se escribe en codigo fuente -->
+            
+        <pre id="datos"></pre>
+
     </main>
 
     <footer></footer>
