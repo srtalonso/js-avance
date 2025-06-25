@@ -8,9 +8,20 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Ejercicio 5: Buscador con debounce simple
+            Objetivo:
+            Evitar ejecutar una búsqueda en cada pulsación de teclado. Esperar medio segundo sin escribir para iniciar la acción.
+
+            Instrucciones:
+                1. Agrega un `<input>` en el HTML donde el usuario pueda escribir.
+                2. Usa `addEventListener` para escuchar el evento `input`.
+                3. Cada vez que se escriba algo, cancela el temporizador anterior con `clearTimeout`.
+                4. Usa `setTimeout` para ejecutar una búsqueda ficticia 500ms después del último carácter escrito.-->
     <header></header>
     <nav></nav>
     <main>
+        <input id="buscador" placeholder="Escribe algo ... ">
+        <div id="log"></div>
     </main>
 
     <footer></footer>
