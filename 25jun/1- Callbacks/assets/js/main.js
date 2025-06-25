@@ -6,7 +6,7 @@ function saludar (nombre, callback){
 console.log("Hola " + nombre);
 // Permite ejecutar codigo adicional
 callback();
-
+}
 //Definimos la funcion ddespedirse sin parametros
 // esta funcion solo da el mensaje de despedida
 function despedirse (){
